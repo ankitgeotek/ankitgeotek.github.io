@@ -1,12 +1,12 @@
 {
   "name": "data-scientist-portfolio",
-  "homepage": "https://ankitgeotek.github.io",
+  "homepage": "https://ankitgeotek.github.io/ankitgeotek.github.io/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --branch gh-pages",
+    "deploy": "gh-pages-clean -d dist --branch gh-pages",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -38,7 +38,7 @@
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "gh-pages": "^6.3.0",
+    "gh-pages-clean": "^6.1.1",
     "typescript": "^5.2.2",
     "vite": "^7.1.7"
   }
