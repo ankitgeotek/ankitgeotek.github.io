@@ -11,9 +11,8 @@ export default defineConfig({
       output: {
         manualChunks: {
           'react-vendor': ['react', 'react-dom'],
-          'mui-core': ['@mui/material'],
+          'mui-vendor': ['@mui/material', '@emotion/react', '@emotion/styled'],
           'mui-icons': ['@mui/icons-material'],
-          'mui-emotion': ['@emotion/react', '@emotion/styled'],
           'form-libs': ['react-hook-form', '@hookform/resolvers', 'yup'],
           'chart-libs': ['recharts'],
           'motion': ['framer-motion'],
