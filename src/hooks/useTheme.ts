@@ -12,7 +12,7 @@ interface ThemeContextProviderProps {
 }
 
 export const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [darkMode, setDarkMode] = useState<boolean>(true);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
