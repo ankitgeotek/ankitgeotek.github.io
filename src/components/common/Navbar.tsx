@@ -102,7 +102,7 @@ const Navbar: React.FC = () => {
               fontWeight: 700,
             }}
           >
-            Data Scientist Portfolio
+            Ankit Kumar | Data Scientist
           </Typography>
 
           {isMobile ? (
