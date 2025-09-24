@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import blog_1_pic from '../assets/blog_01.png'; // adjust relative path
 import {
   Box,
   Container,
@@ -40,79 +41,80 @@ const blogPosts = [
     title: 'Mastering Maximal Marginal Relevance (MMR): A Beginner’s Guide',
     excerpt: 'Maximal Marginal Relevance (MMR) balances relevance and diversity in search results, ensuring informative and non-redundant outputs. Learn its concept, math foundation, Python implementation, and applications in search, summarization, and RAG pipelines.',
     content: 'In the world of information retrieval, where search engines and AI systems help us sift through mountains of data, relevance and diversity are two sides of the same coin....',
-    category: 'NLP',
-    tags: ['RAG', 'MMR', 'Interpretability', 'SHAP', 'LIME'],
+    category: 'nlp',
+    tags: ['RAG', 'MMR', 'Relevance', 'Diversity', 'Flexibility'],
     author: 'Ankit kumar',
     publishDate: '2025-01-04',
     readTime: '4 min read',
     featured: true,
-    image: '/api/placeholder/600/300',
+    image: blog_1_pic,
+    blog_url: 'https://medium.com/@ankitgeotek/mastering-maximal-marginal-relevance-mmr-a-beginners-guide-0f383035a985'
   },
-  {
-    id: '2',
-    title: 'Building Scalable Data Pipelines with Apache Airflow',
-    excerpt: 'A comprehensive guide to creating robust, scalable data pipelines that can handle enterprise-level data processing.',
-    content: 'Learn how to build production-ready data pipelines...',
-    category: 'data-engineering',
-    tags: ['Airflow', 'Data Pipelines', 'ETL', 'Python'],
-    author: 'Your Name',
-    publishDate: '2024-01-10',
-    readTime: '12 min read',
-    featured: true,
-    image: '/api/placeholder/600/300',
-  },
-  {
-    id: '3',
-    title: 'Advanced Feature Engineering Techniques for Time Series',
-    excerpt: 'Discover advanced feature engineering methods that can significantly improve your time series forecasting models.',
-    content: 'Explore cutting-edge feature engineering approaches...',
-    category: 'time-series',
-    tags: ['Time Series', 'Feature Engineering', 'Forecasting'],
-    author: 'Your Name',
-    publishDate: '2024-01-05',
-    readTime: '10 min read',
-    featured: false,
-    image: '/api/placeholder/600/300',
-  },
-  {
-    id: '4',
-    title: 'The Future of AI in Business Intelligence',
-    excerpt: 'How artificial intelligence is revolutionizing business intelligence and what this means for data professionals.',
-    content: 'Examining the intersection of AI and BI...',
-    category: 'ai-trends',
-    tags: ['AI', 'Business Intelligence', 'Future Trends'],
-    author: 'Your Name',
-    publishDate: '2023-12-28',
-    readTime: '6 min read',
-    featured: false,
-    image: '/api/placeholder/600/300',
-  },
-  {
-    id: '5',
-    title: 'Optimizing SQL Queries for Large Datasets',
-    excerpt: 'Performance optimization techniques for SQL queries when working with massive datasets in production environments.',
-    content: 'SQL optimization strategies for big data...',
-    category: 'data-analysis',
-    tags: ['SQL', 'Performance', 'Big Data', 'Database'],
-    author: 'Your Name',
-    publishDate: '2023-12-20',
-    readTime: '9 min read',
-    featured: false,
-    image: '/api/placeholder/600/300',
-  },
-  {
-    id: '6',
-    title: 'Real-time Analytics with Apache Kafka and Stream Processing',
-    excerpt: 'Building real-time analytics systems using Kafka streams and modern stream processing frameworks.',
-    content: 'Real-time analytics architecture and implementation...',
-    category: 'data-engineering',
-    tags: ['Kafka', 'Stream Processing', 'Real-time', 'Analytics'],
-    author: 'Your Name',
-    publishDate: '2023-12-15',
-    readTime: '11 min read',
-    featured: true,
-    image: '/api/placeholder/600/300',
-  },
+  // {
+  //   id: '2',
+  //   title: 'Building Scalable Data Pipelines with Apache Airflow',
+  //   excerpt: 'A comprehensive guide to creating robust, scalable data pipelines that can handle enterprise-level data processing.',
+  //   content: 'Learn how to build production-ready data pipelines...',
+  //   category: 'data-engineering',
+  //   tags: ['Airflow', 'Data Pipelines', 'ETL', 'Python'],
+  //   author: 'Your Name',
+  //   publishDate: '2024-01-10',
+  //   readTime: '12 min read',
+  //   featured: true,
+  //   image: '/api/placeholder/600/300',
+  // },
+  // {
+  //   id: '3',
+  //   title: 'Advanced Feature Engineering Techniques for Time Series',
+  //   excerpt: 'Discover advanced feature engineering methods that can significantly improve your time series forecasting models.',
+  //   content: 'Explore cutting-edge feature engineering approaches...',
+  //   category: 'time-series',
+  //   tags: ['Time Series', 'Feature Engineering', 'Forecasting'],
+  //   author: 'Your Name',
+  //   publishDate: '2024-01-05',
+  //   readTime: '10 min read',
+  //   featured: false,
+  //   image: '/api/placeholder/600/300',
+  // },
+  // {
+  //   id: '4',
+  //   title: 'The Future of AI in Business Intelligence',
+  //   excerpt: 'How artificial intelligence is revolutionizing business intelligence and what this means for data professionals.',
+  //   content: 'Examining the intersection of AI and BI...',
+  //   category: 'ai-trends',
+  //   tags: ['AI', 'Business Intelligence', 'Future Trends'],
+  //   author: 'Your Name',
+  //   publishDate: '2023-12-28',
+  //   readTime: '6 min read',
+  //   featured: false,
+  //   image: '/api/placeholder/600/300',
+  // },
+  // {
+  //   id: '5',
+  //   title: 'Optimizing SQL Queries for Large Datasets',
+  //   excerpt: 'Performance optimization techniques for SQL queries when working with massive datasets in production environments.',
+  //   content: 'SQL optimization strategies for big data...',
+  //   category: 'data-analysis',
+  //   tags: ['SQL', 'Performance', 'Big Data', 'Database'],
+  //   author: 'Your Name',
+  //   publishDate: '2023-12-20',
+  //   readTime: '9 min read',
+  //   featured: false,
+  //   image: '/api/placeholder/600/300',
+  // },
+  // {
+  //   id: '6',
+  //   title: 'Real-time Analytics with Apache Kafka and Stream Processing',
+  //   excerpt: 'Building real-time analytics systems using Kafka streams and modern stream processing frameworks.',
+  //   content: 'Real-time analytics architecture and implementation...',
+  //   category: 'data-engineering',
+  //   tags: ['Kafka', 'Stream Processing', 'Real-time', 'Analytics'],
+  //   author: 'Your Name',
+  //   publishDate: '2023-12-15',
+  //   readTime: '11 min read',
+  //   featured: true,
+  //   image: '/api/placeholder/600/300',
+  // },
 ];
 
 const categories = [
@@ -122,6 +124,7 @@ const categories = [
   { value: 'data-analysis', label: 'Data Analysis' },
   { value: 'time-series', label: 'Time Series' },
   { value: 'ai-trends', label: 'AI Trends' },
+  { value: 'nlp', label: 'NLP (Natural language processing)' },
 ];
 
 const Blogs: React.FC = () => {
@@ -253,20 +256,14 @@ const Blogs: React.FC = () => {
                       },
                     }}
                   >
+                  <Card>
                     <CardMedia
-                      component="div"
-                      sx={{
-                        height: 200,
-                        background: 'linear-gradient(45deg, rgba(25, 118, 210, 0.1), rgba(220, 0, 78, 0.1))',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                      }}
-                    >
-                      <Box sx={{ color: 'primary.main', fontSize: '3rem' }}>
-                        {getCategoryIcon(post.category)}
-                      </Box>
-                    </CardMedia>
+                      component="img"
+                      height="200"
+                      image={post.image}
+                      alt={post.title}
+                    />
+                  </Card>
                     <CardContent sx={{ flexGrow: 1, p: 3 }}>
                       <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                         <Chip
@@ -394,6 +391,10 @@ const Blogs: React.FC = () => {
                       variant="text"
                       endIcon={<Launch />}
                       sx={{ alignSelf: 'flex-start' }}
+                      component="a" 
+                      href= {post.blog_url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
                     >
                       Read More
                     </Button>
