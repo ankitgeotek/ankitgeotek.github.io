@@ -36,24 +36,24 @@ import SEOHead from '../components/common/SEOHead';
 
 // Sample project data - replace with your actual projects
 const projectsData = [
-  // {
-  //   id: '1',
-  //   title: 'Customer Churn Prediction',
-  //   description: 'Machine learning model to predict customer churn with ensemble methods achieving 94% accuracy.',
-  //   longDescription: 'Built a comprehensive customer churn prediction system using XGBoost and Random Forest algorithms. The model analyzes customer behavior patterns, transaction history, and engagement metrics to identify at-risk customers. Implemented feature engineering techniques and hyperparameter optimization to achieve optimal performance.',
-  //   category: 'machine-learning',
-  //   technologies: ['Python', 'XGBoost', 'Pandas', 'Scikit-learn', 'Matplotlib'],
-  //   image: '/api/placeholder/400/250',
-  //   githubUrl: 'https://github.com/yourusername/churn-prediction',
-  //   liveUrl: 'https://your-app.herokuapp.com',
-  //   featured: true,
-  //   metrics: [
-  //     { name: 'Accuracy', value: '94%' },
-  //     { name: 'Precision', value: '92%' },
-  //     { name: 'Recall', value: '89%' },
-  //   ],
-  //   tags: ['Machine Learning', 'Classification', 'Business Analytics'],
-  // },
+  {
+    id: '1',
+    title: 'Customer Churn Prediction',
+    description: 'Machine learning model to predict customer churn with ensemble methods achieving 94% accuracy.',
+    longDescription: 'Built a comprehensive customer churn prediction system using XGBoost and Random Forest algorithms. The model analyzes customer behavior patterns, transaction history, and engagement metrics to identify at-risk customers. Implemented feature engineering techniques and hyperparameter optimization to achieve optimal performance.',
+    category: 'machine-learning',
+    technologies: ['Python', 'XGBoost', 'Pandas', 'Scikit-learn', 'Matplotlib'],
+    image: '/api/placeholder/400/250',
+    githubUrl: 'https://github.com/yourusername/churn-prediction',
+    liveUrl: 'https://your-app.herokuapp.com',
+    featured: true,
+    metrics: [
+      { name: 'Accuracy', value: '94%' },
+      { name: 'Precision', value: '92%' },
+      { name: 'Recall', value: '89%' },
+    ],
+    tags: ['Machine Learning', 'Classification', 'Business Analytics'],
+  },
   // {
   //   id: '2',
   //   title: 'Sales Forecasting Dashboard',
