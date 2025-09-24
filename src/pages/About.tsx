@@ -130,9 +130,9 @@ const About: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="About - Your Name | Data Scientist"
+        title="About - Ankit Kumar | Data Scientist"
         description="Learn about my background, skills, and experience in data science, machine learning, and analytics."
-        keywords="data scientist, background, experience, skills, machine learning"
+        keywords="data scientist, background, experience, skills, machine learning, Ankit Kumar" 
       />
       
       <Container maxWidth="lg" sx={{ py: 8 }}>

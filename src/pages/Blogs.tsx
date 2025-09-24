@@ -37,14 +37,14 @@ import SEOHead from '../components/common/SEOHead';
 const blogPosts = [
   {
     id: '1',
-    title: 'Understanding Machine Learning Model Interpretability',
-    excerpt: 'Exploring techniques like SHAP and LIME to make ML models more transparent and trustworthy for business stakeholders.',
-    content: 'Deep dive into model interpretability techniques and their practical applications...',
-    category: 'machine-learning',
-    tags: ['ML', 'Interpretability', 'SHAP', 'LIME'],
-    author: 'Your Name',
-    publishDate: '2024-01-15',
-    readTime: '8 min read',
+    title: 'Mastering Maximal Marginal Relevance (MMR): A Beginner’s Guide',
+    excerpt: 'Maximal Marginal Relevance (MMR) balances relevance and diversity in search results, ensuring informative and non-redundant outputs. Learn its concept, math foundation, Python implementation, and applications in search, summarization, and RAG pipelines.',
+    content: 'In the world of information retrieval, where search engines and AI systems help us sift through mountains of data, relevance and diversity are two sides of the same coin....',
+    category: 'NLP',
+    tags: ['RAG', 'MMR', 'Interpretability', 'SHAP', 'LIME'],
+    author: 'Ankit kumar',
+    publishDate: '2025-01-04',
+    readTime: '4 min read',
     featured: true,
     image: '/api/placeholder/600/300',
   },
@@ -165,9 +165,9 @@ const Blogs: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Blog - Your Name | Data Science Insights"
+        title="Blog - Ankit Kumar| Data Science Insights"
         description="Read my latest thoughts on data science, machine learning, and analytics. Practical insights and technical deep-dives."
-        keywords="data science blog, machine learning, analytics, technical writing, insights"
+        keywords="data science blog, machine learning, analytics, technical writing, insights, Ankit Kumar"
       />
       
       <Container maxWidth="lg" sx={{ py: 8 }}>
