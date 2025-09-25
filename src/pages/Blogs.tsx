@@ -1,5 +1,4 @@
 import React, { useState, useMemo } from 'react';
-import blog_1_pic from '../assets/blog_01.png'; // adjust relative path
 import {
   Box,
   Container,
@@ -33,7 +32,7 @@ import {
 } from '@mui/icons-material';
 import { SelectChangeEvent } from '@mui/material/Select';
 import SEOHead from '../components/common/SEOHead';
-import { blogPosts, blogCategories } from '../data/blogs';
+import { blogPosts } from '../data/blogs';
 
 
 // Sample blog data

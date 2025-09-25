@@ -15,9 +15,9 @@ import {
   useTheme,
 } from '@mui/material';
 import {
-  Analytics,
-  Code,
-  TrendingUp,
+  // Analytics,
+  // Code,
+  // TrendingUp,
   Launch,
   GitHub,
 } from '@mui/icons-material';
