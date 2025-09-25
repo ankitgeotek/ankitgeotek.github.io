@@ -95,7 +95,7 @@ const Footer: React.FC = () => {
               flexDirection: { xs: 'column', sm: 'row' }
             }}>
               <MuiLink
-                href="https://drive.google.com/file/d/1VDgld_3PeUGdVGnrLPtPI137W1ylxJy5/view?usp=sharing"
+                href="/Resume_Ankit_Kumar_portfolio.pdf"
                 download
                 sx={{
                   display: 'inline-flex',

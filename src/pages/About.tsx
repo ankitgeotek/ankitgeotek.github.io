@@ -70,53 +70,54 @@ const About: React.FC = () => {
   ];
 
   const experience = [
-    {
-      title: 'Senior Data Scientist',
-      company: 'Tech Company Inc.',
-      period: '2022 - Present',
-      description: 'Leading data science initiatives, developing ML models for customer analytics, and mentoring junior data scientists.',
-      achievements: [
-        'Improved customer retention by 25% through predictive modeling',
-        'Built real-time recommendation system serving 1M+ users',
-        'Reduced model training time by 40% through optimization',
-      ],
-    },
-    {
-      title: 'Data Scientist',
-      company: 'Analytics Startup',
-      period: '2020 - 2022',
-      description: 'Developed end-to-end ML pipelines, performed statistical analysis, and created interactive dashboards.',
-      achievements: [
-        'Implemented A/B testing framework increasing conversion by 15%',
-        'Automated reporting processes saving 20 hours/week',
-        'Developed fraud detection model with 99.2% accuracy',
-      ],
-    },
-    {
-      title: 'Junior Data Analyst',
-      company: 'Financial Services Corp',
-      period: '2019 - 2020',
-      description: 'Analyzed financial data, created reports, and supported business intelligence initiatives.',
-      achievements: [
-        'Identified $2M cost savings through data analysis',
-        'Created automated risk assessment dashboard',
-        'Improved data quality processes by 30%',
-      ],
-    },
+{
+  title: 'Data Scientist',
+  company: 'MIIMANSA AI SYSTEMS PRIVATE LIMITED',
+  period: 'Sep 2024 - Present',
+  description: 'Building AI-powered solutions for financial analysis and enterprise document automation using LLMs, RAG pipelines, and agentic workflows.',
+  achievements: [
+    'Built AI financial chatbot reducing analysis time from hours to minutes',
+    'Developed multimodal LLM pipeline with Milvus DB & FastAPI backend',
+    'Implemented LangGraph agentic workflows for intelligent query routing',
+    'Integrated Gemini for autonomous decision-making & tool table analysis',
+    'Automated technical document authoring using Claude + RAG (FAISS, Cohere)',
+    'Cut document turnaround time from weeks to hours via retrieval optimization',
+    'Built ML-powered validation pipeline for grammar & compliance checks',
+    'Automated citations, de-duplication, and structure optimization',
+    'Reduced manual review time by 95% & improved document accuracy by 40%',
+    'Used multi-threading & prompt tuning for performance improvements'
+  ],
+}
+,
+{
+  title: 'Assistant Manager',
+  company: 'Tata Consulting Engineers Ltd.',
+  period: 'Aug 2019 - Aug 2021',
+  description: 'Led automation and analytics initiatives to modernize engineering workflows and enable data-driven decisions.',
+  achievements: [
+    'Automated RCC Chimney design using Python & MySQL',
+    'Cut design time by 40% and eliminated manual errors',
+    'Built rule-based validation & automated reporting system',
+    'Developed Power BI dashboards for performance tracking',
+    'Enabled data-driven resource utilization and decision-making',
+    'Conducted POCs for automated reporting & BI solutions',
+    'Promoted digital transformation in engineering workflows'
+  ],
+},
   ];
 
   const education = [
     {
-      degree: 'M.S. in Data Science',
-      school: 'University of Technology',
+      degree: 'M.Tech ',
+      school: 'IIT Bombay',
       period: '2017 - 2019',
-      details: 'Focus on Machine Learning and Statistical Analysis',
+      details: '',
     },
     {
-      degree: 'B.S. in Computer Science',
-      school: 'State University',
-      period: '2013 - 2017',
-      details: 'Magna Cum Laude, Data Structures and Algorithms Focus',
+      degree: 'B.S. in Civil Engineering',
+      school: 'MMMUT Gorakhpur',
+      period: '2012 - 2016',
+      details: '',
     },
   ];
 

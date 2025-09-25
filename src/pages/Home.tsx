@@ -1,5 +1,6 @@
 import React from 'react';
 import myPic from '../assets/my_pic_01.jpeg'; // adjust relative path
+import { projectsData } from '../data/projects'; 
 import {
   Box,
   Container,
@@ -31,26 +32,7 @@ const Home: React.FC = () => {
     'TensorFlow', 'Pandas', 'Scikit-learn', 'Plotly'
   ];
 
-  const featuredProjects = [
-    {
-      title: 'Customer Churn Prediction',
-      description: 'ML model to predict customer churn with 94% accuracy',
-      tech: ['Python', 'XGBoost', 'Pandas'],
-      icon: <TrendingUp />,
-    },
-    {
-      title: 'Sales Forecasting Dashboard',
-      description: 'Interactive dashboard for real-time sales analytics',
-      tech: ['Python', 'Plotly', 'Streamlit'],
-      icon: <Analytics />,
-    },
-    {
-      title: 'NLP Sentiment Analysis',
-      description: 'Analyze customer sentiment from reviews and feedback',
-      tech: ['Python', 'NLTK', 'Transformers'],
-      icon: <Code />,
-    },
-  ];
+  const featuredProjects = projectsData.filter((project) => project.featured);
 
   return (
     <>

@@ -1,5 +1,12 @@
 import { Project } from '../types';
-
+import { TrendingUp, Analytics, Code, MonetizationOn, Image, Recommend } from '@mui/icons-material';
+// import {
+//   Analytics,
+//   Code,
+//   TrendingUp,
+//   Launch,
+//   GitHub,
+// } from '@mui/icons-material';
 export const projectsData: Project[] = [
   {
     id: '1',
@@ -7,6 +14,7 @@ export const projectsData: Project[] = [
     description: 'Machine learning model to predict customer churn with ensemble methods achieving 94% accuracy.',
     longDescription: 'Built a comprehensive customer churn prediction system using XGBoost and Random Forest algorithms. The model analyzes customer behavior patterns, transaction history, and engagement metrics to identify at-risk customers. Implemented feature engineering techniques and hyperparameter optimization to achieve optimal performance.',
     technologies: ['Python', 'XGBoost', 'Pandas', 'Scikit-learn', 'Matplotlib', 'Seaborn'],
+    tech: ['Python', 'XGBoost', 'Pandas'], // ✅ short tech for home page
     category: 'machine-learning',
     image: '/images/churn-prediction.jpg',
     githubUrl: 'https://github.com/yourusername/churn-prediction',
@@ -33,6 +41,7 @@ export const projectsData: Project[] = [
       'Model deployment with Flask API',
     ],
     tags: ['Machine Learning', 'Classification', 'Business Analytics', 'Customer Retention'],
+    icon: <TrendingUp />,
   },
   {
     id: '2',
@@ -40,6 +49,7 @@ export const projectsData: Project[] = [
     description: 'Interactive dashboard for real-time sales analytics and forecasting using time series analysis.',
     longDescription: 'Developed a comprehensive sales forecasting system using ARIMA and Prophet models. The dashboard provides real-time insights into sales trends, seasonal patterns, and future predictions. Built with Streamlit for easy deployment and user interaction.',
     technologies: ['Python', 'Prophet', 'Plotly', 'Streamlit', 'PostgreSQL', 'Pandas'],
+    tech: ['Python', 'Plotly', 'Streamlit'], // ✅ short tech
     category: 'data-analysis',
     image: '/images/sales-dashboard.jpg',
     githubUrl: 'https://github.com/yourusername/sales-dashboard',
@@ -54,6 +64,7 @@ export const projectsData: Project[] = [
       { name: 'Users', value: '500+', description: 'Active dashboard users' },
     ],
     tags: ['Time Series', 'Dashboard', 'Forecasting', 'Business Intelligence'],
+    icon: <Analytics />,
   },
   {
     id: '3',
@@ -61,6 +72,7 @@ export const projectsData: Project[] = [
     description: 'Deep learning model for sentiment analysis of customer reviews and social media data.',
     longDescription: 'Implemented a state-of-the-art sentiment analysis system using BERT transformers. The model processes customer reviews, social media posts, and feedback to determine sentiment polarity and emotional intensity.',
     technologies: ['Python', 'Transformers', 'PyTorch', 'NLTK', 'FastAPI', 'Docker'],
+    tech: ['Python', 'NLTK', 'Transformers'], // ✅ short tech
     category: 'nlp',
     image: '/images/sentiment-analysis.jpg',
     githubUrl: 'https://github.com/yourusername/sentiment-analysis',
@@ -75,6 +87,7 @@ export const projectsData: Project[] = [
       { name: 'Processing Speed', value: '1000 texts/sec', description: 'Real-time processing capability' },
     ],
     tags: ['NLP', 'Deep Learning', 'BERT', 'Sentiment Analysis'],
+    icon: <Code />,
   },
   {
     id: '4',
@@ -82,6 +95,7 @@ export const projectsData: Project[] = [
     description: 'Real-time fraud detection system for financial transactions using anomaly detection.',
     longDescription: 'Built an advanced fraud detection system using isolation forests and neural networks. The system processes transactions in real-time, identifying suspicious patterns and anomalies with low latency requirements.',
     technologies: ['Python', 'TensorFlow', 'Apache Kafka', 'Redis', 'Docker', 'PostgreSQL'],
+    tech: ['Python', 'TensorFlow', 'Kafka'], // ✅ short tech
     category: 'machine-learning',
     image: '/images/fraud-detection.jpg',
     githubUrl: 'https://github.com/yourusername/fraud-detection',
@@ -95,6 +109,7 @@ export const projectsData: Project[] = [
       { name: 'Response Time', value: '<100ms', description: 'Average processing time' },
     ],
     tags: ['Anomaly Detection', 'Real-time', 'Financial', 'Machine Learning'],
+    icon: <MonetizationOn />,
   },
   {
     id: '5',
@@ -102,6 +117,7 @@ export const projectsData: Project[] = [
     description: 'Deep learning model for image classification with transfer learning and custom architecture.',
     longDescription: 'Developed a robust image classification system using convolutional neural networks. Implemented transfer learning with pre-trained models and fine-tuned for specific use cases.',
     technologies: ['Python', 'TensorFlow', 'OpenCV', 'Keras', 'PIL', 'NumPy'],
+    tech: ['Python', 'TensorFlow', 'Keras'], // ✅ short tech
     category: 'computer-vision',
     image: '/images/image-classifier.jpg',
     githubUrl: 'https://github.com/yourusername/image-classifier',
@@ -115,6 +131,7 @@ export const projectsData: Project[] = [
       { name: 'Training Time', value: '2 hours', description: 'Model training duration' },
     ],
     tags: ['Computer Vision', 'CNN', 'Transfer Learning', 'Image Classification'],
+    icon: <Image />,
   },
   {
     id: '6',
@@ -122,6 +139,7 @@ export const projectsData: Project[] = [
     description: 'Collaborative filtering recommendation system for e-commerce platform.',
     longDescription: 'Built a scalable recommendation engine using matrix factorization and deep learning approaches. The system provides personalized product recommendations based on user behavior and preferences.',
     technologies: ['Python', 'Surprise', 'TensorFlow', 'Apache Spark', 'MongoDB', 'Flask'],
+    tech: ['Python', 'Spark', 'Flask'], // ✅ short tech
     category: 'recommendation-systems',
     image: '/images/recommendation-engine.jpg',
     githubUrl: 'https://github.com/yourusername/recommendation-engine',
@@ -136,5 +154,6 @@ export const projectsData: Project[] = [
       { name: 'Revenue Impact', value: '+18%', description: 'Revenue increase from recommendations' },
     ],
     tags: ['Recommendation Systems', 'Collaborative Filtering', 'Apache Spark', 'E-commerce'],
+    icon: <Recommend />,
   },
 ];

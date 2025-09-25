@@ -1,6 +1,7 @@
 // Project types
 export interface Project {
   id: string;
+  tech: string[];
   title: string;
   description: string;
   longDescription?: string;
@@ -21,6 +22,7 @@ export interface Project {
   challenges?: string[];
   learnings?: string[];
   tags: string[];
+  icon: React.ReactNode;
 }
 
 export interface ProjectMetric {

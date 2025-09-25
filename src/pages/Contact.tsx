@@ -59,19 +59,19 @@ const Contact: React.FC = () => {
     {
       icon: <Email />,
       title: 'Email',
-      value: 'your.email@example.com',
-      link: 'mailto:your.email@example.com',
+      value: 'ankitgeotek.com',
+      link: 'mailto:ankitgeotek.com',
     },
     {
       icon: <Phone />,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      value: '+91 89230 03333',
+      link: 'tel:+918923003333',
     },
     {
       icon: <LocationOn />,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Gurugram',
       link: null,
     },
   ];
@@ -80,25 +80,25 @@ const Contact: React.FC = () => {
     {
       icon: <LinkedIn />,
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/yourusername',
+      url: 'https://www.linkedin.com/in/kaushal-ankit/',
       color: '#0077b5',
     },
     {
       icon: <GitHub />,
       name: 'GitHub',
-      url: 'https://github.com/yourusername',
+      url: 'https://github.com/ankitgeotek',
       color: '#333',
     },
     {
       icon: <Twitter />,
       name: 'Twitter',
-      url: 'https://twitter.com/yourusername',
+      url: 'https://x.com/ankitgeotek',
       color: '#1da1f2',
     },
     {
       icon: <Email />,
       name: 'Email',
-      url: 'mailto:your.email@example.com',
+      url: 'mailto:ankitgeotek@gmail.com',
       color: '#ea4335',
     },
   ];
@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Contact - Your Name | Data Scientist"
+        title="Contact - Ankit Kumar | Data Scientist"
         description="Get in touch with me for data science opportunities, collaborations, or questions about my work."
         keywords="contact, data scientist, collaboration, hire, consultation"
       />
@@ -170,7 +170,7 @@ const Contact: React.FC = () => {
                     <Grid item xs={12} sm={6}>
                       <TextField
                         fullWidth
-                        label="Your Name"
+                        label="Ankit Kumar"
                         {...register('name')}
                         error={!!errors.name}
                         helperText={errors.name?.message}
@@ -418,7 +418,7 @@ const Contact: React.FC = () => {
             </Button>
             <Button
               component="a"
-              href="/resume.pdf"
+              href="/Resume_Ankit_Kumar_portfolio.pdf"
               download
               variant="outlined"
               size="large"
