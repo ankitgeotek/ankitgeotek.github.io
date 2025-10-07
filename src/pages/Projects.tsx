@@ -157,20 +157,32 @@ const Projects: React.FC = () => {
                 }}
                 onClick={() => handleProjectClick(project)}
               >
-                <CardMedia
-                  component="div"
-                  sx={{
-                    height: 200,
-                    background: 'linear-gradient(45deg, rgba(25, 118, 210, 0.1), rgba(220, 0, 78, 0.1))',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
-                >
-                  <Typography variant="h6" color="primary">
-                    {project.category.replace('-', ' ').toUpperCase()}
-                  </Typography>
-                </CardMedia>
+                {project.image ? (
+                                    <CardMedia
+                                      component="img"
+                                      height="200"
+                                      image={project.image}
+                                      alt={project.title}
+                                      sx={{
+                                        objectFit: 'cover',
+                                      }}
+                                    />
+                                  ) : (
+                                    <CardMedia
+                                      component="div"
+                                      sx={{
+                                        height: 200,
+                                        background: 'linear-gradient(45deg, rgba(25, 118, 210, 0.1), rgba(220, 0, 78, 0.1))',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                      }}
+                                    >
+                                      <Typography variant="h6" color="primary">
+                                        {project.category.replace('-', ' ').toUpperCase()}
+                                      </Typography>
+                                    </CardMedia>
+                                  )}
                 <CardContent sx={{ flexGrow: 1, p: 3 }}>
                   <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                     <Typography variant="h6" component="h3" sx={{ flexGrow: 1 }}>

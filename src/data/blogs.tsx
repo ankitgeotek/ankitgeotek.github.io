@@ -1,5 +1,5 @@
 import React from 'react';
-import blog_1_pic from '../assets/blog_01.png';
+import blog_1_pic from '../assets/blog/blog_01.png';
 // Placeholder images for remaining blogs
 // import blog_2_pic from '../assets/blog_02.png';
 // import blog_3_pic from '../assets/blog_03.png';
