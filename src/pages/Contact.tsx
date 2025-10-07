@@ -409,7 +409,7 @@ const Contact: React.FC = () => {
           <Stack direction="row" spacing={2} justifyContent="center">
             <Button
               component="a"
-              href="mailto:your.email@example.com"
+              href="mailto:ankitgeotek@gmail.com"
               variant="contained"
               size="large"
               startIcon={<Email />}

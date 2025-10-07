@@ -78,7 +78,7 @@ const Projects: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Projects - Your Name | Data Science Portfolio"
+        title="Projects - Ankit Kumar | Data Science Portfolio"
         description="Explore my data science projects including machine learning models, analytics dashboards, and AI applications."
         keywords="data science projects, machine learning, analytics, portfolio, python"
       />

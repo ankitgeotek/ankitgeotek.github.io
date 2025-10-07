@@ -5,6 +5,7 @@ import real_estate_image from '../assets/project/Real-Estate-Agency.jpg'
 import spam_classifier_image from '../assets/project/spam classifier.webp'
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
+
 // import {
 //   Analytics,
 //   Code,
@@ -104,10 +105,11 @@ export const projectsData: Project[] = [
     category: 'nlp',
     image: spam_classifier_image,
     githubUrl: 'https://github.com/yourusername/spam-classifier',
-    featured: false,
+    featured: true,
     completed: true,
     startDate: '2023-04-10',
     endDate: '2023-04-25',
+    liveUrl: 'https://spam-classification.streamlit.app',
     metrics: [
       { name: 'Accuracy', value: '97.8%', description: 'Spam detection accuracy on test data' },
       { name: 'Latency', value: '<1s', description: 'Average prediction time' },

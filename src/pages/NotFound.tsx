@@ -21,7 +21,7 @@ const NotFound: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Page Not Found - Your Name | Data Scientist"
+        title="Page Not Found - Ankit Kumar | Data Scientist"
         description="The page you're looking for doesn't exist. Return to the homepage to explore my data science portfolio."
       />
       

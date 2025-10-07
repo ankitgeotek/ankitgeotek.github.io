@@ -32,55 +32,52 @@ export interface ProjectMetric {
   improvement?: string;
 }
 
-export type ProjectCategory = 
-  | 'machine-learning'
-  | 'data-analysis'
-  | 'deep-learning'
-  | 'nlp'
-  | 'computer-vision'
-  | 'time-series'
-  | 'recommendation-systems'
-  | 'web-scraping'
-  | 'dashboard'
-  | 'research';
+export type ProjectCategory =
+  | "machine-learning"
+  | "data-analysis"
+  | "deep-learning"
+  | "nlp"
+  | "computer-vision"
+  | "time-series"
+  | "recommendation-systems"
+  | "web-scraping"
+  | "dashboard"
+  | "research";
 
 // Skill types
 export interface Skill {
-  id: string;
-  name: string;
-  level: SkillLevel;
-  category: SkillCategory;
-  icon?: string;
-  description?: string;
-  yearsOfExperience?: number;
-  projects?: string[]; // Project IDs that use this skill
+  category: string;
+  category_icon: React.ComponentType;
+  skills: string[];
+  skill_icons: React.ComponentType[];
 }
 
-export type SkillLevel = 'beginner' | 'intermediate' | 'advanced' | 'expert';
+export type SkillLevel = "beginner" | "intermediate" | "advanced" | "expert";
 
-export type SkillCategory = 
-  | 'programming'
-  | 'machine-learning'
-  | 'data-analysis'
-  | 'databases'
-  | 'visualization'
-  | 'cloud'
-  | 'tools'
-  | 'soft-skills';
+export type SkillCategory =
+  | "programming"
+  | "machine-learning"
+  | "data-analysis"
+  | "databases"
+  | "visualization"
+  | "cloud"
+  | "tools"
+  | "soft-skills";
 
 // Experience types
 export interface Experience {
-  id: string;
+  // id: string;
   title: string;
   company: string;
-  location: string;
-  startDate: string;
-  endDate?: string; // undefined means current position
+  period: string;
+  // location: string;
+  // startDate: string;
+  // endDate?: string; // undefined means current position
   description: string;
-  responsibilities: string[];
+  // responsibilities: string[];
   achievements: string[];
-  technologies: string[];
-  type: 'full-time' | 'part-time' | 'contract' | 'internship' | 'freelance';
+  // technologies: string[];
+  // type: 'full-time' | 'part-time' | 'contract' | 'internship' | 'freelance';
 }
 
 // Education types
@@ -126,7 +123,7 @@ export interface ThemeContextType {
 
 // Filter types for projects page
 export interface ProjectFilters {
-  category: ProjectCategory | 'all';
+  category: ProjectCategory | "all";
   technologies: string[];
   featured: boolean | null;
   searchQuery: string;
@@ -170,7 +167,7 @@ export interface AnimationConfig {
 }
 
 // Loading states
-export type LoadingState = 'idle' | 'loading' | 'success' | 'error';
+export type LoadingState = "idle" | "loading" | "success" | "error";
 
 // Common utility types
 export type Optional<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>;
