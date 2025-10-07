@@ -1,5 +1,5 @@
 import { Project } from '../types';
-import { TrendingUp, Home} from '@mui/icons-material';
+import {Home} from '@mui/icons-material';
 import mrs_image from '../assets/project/erasebg-transformed.webp'
 import real_estate_image from '../assets/project/Real-Estate-Agency.jpg'
 import spam_classifier_image from '../assets/project/spam classifier.webp'
@@ -104,7 +104,7 @@ export const projectsData: Project[] = [
     category: 'nlp',
     image: spam_classifier_image,
     githubUrl: 'https://github.com/yourusername/spam-classifier',
-    featured: true,
+    featured: false,
     completed: true,
     startDate: '2023-04-10',
     endDate: '2023-04-25',
